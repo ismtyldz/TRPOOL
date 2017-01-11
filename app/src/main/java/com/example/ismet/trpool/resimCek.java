@@ -11,7 +11,6 @@ import java.io.InputStream;
 
 public class resimCek extends AsyncTask<String, Void, Bitmap> {
     ImageView bmImage;
-
     public resimCek(ImageView bmImage) {
         this.bmImage = bmImage;
     }
@@ -23,7 +22,7 @@ public class resimCek extends AsyncTask<String, Void, Bitmap> {
             InputStream in = new java.net.URL(urldisplay).openStream();
             mIcon11 = BitmapFactory.decodeStream(in);
         } catch (Exception e) {
-            Log.e("Error", e.getMessage());
+            Log.e("Error ", e.getMessage());
             e.printStackTrace();
         }
         return mIcon11;
