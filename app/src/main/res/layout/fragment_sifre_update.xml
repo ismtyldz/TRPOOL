@@ -14,12 +14,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <AutoCompleteTextView
-                android:id="@+id/email"
+            <EditText
+                android:id="@+id/e_sifre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="EMAİL"
-                android:inputType="textEmailAddress"
+                android:hint="Eski Şifreniz"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/sifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yeni Şifreniz"
+                android:maxLines="1"
+                android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/sifre_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yeni Şifrenizi Tekrar Giriniz"
                 android:maxLines="1"
                 android:singleLine="true" />
 
